@@ -1,0 +1,996 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* HEADER  */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 20px auto;
+}
+
+#white {
+    display: none;
+}
+
+.hamburger,
+.cross {
+    display: none;
+}
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.links-header {
+    display: flex;
+    padding-left: 0;
+}
+
+.links-header li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+.links-header a {
+    text-decoration: none;
+    color: hsl(229, 31%, 21%);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.links-header a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+#login {
+    border: none;
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-left: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 0 2px hsl(0, 94%, 66%);
+}
+
+#login:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+.RS-header {
+    display: none;
+}
+
+
+
+/* SIMPLE BOOKMARK  */
+
+.simple-bookmark {
+    display: flex;
+    margin: 100px 0 0 5%;
+}
+
+
+.simple-bookmark-text {
+    width: 60%;
+    margin: 0 50px;
+}
+
+.simple-bookmark-text h2 {
+    color: hsl(229, 31%, 21%);
+    width: 70%;
+    font-size: 40px;
+    font-weight: 500;
+    margin: 0 0;
+}
+
+.simple-bookmark-text p {
+    color: hsl(229, 8%, 60%);
+    width: 70%;
+    margin: 30px 0;
+    font-weight: 400;
+}
+
+
+
+#get-it-chrome {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+#get-it-chrome:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+    cursor: pointer;
+}
+
+#get-it-firefox {
+    background-color: white;
+    box-shadow: 1px 0 8px hsl(231, 69%, 60%, 20%);
+    color: hsl(229, 31%, 21%);
+    font-weight: 500;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+#get-it-firefox:hover {
+    border: 2px solid hsl(229, 31%, 21%);
+}
+
+
+.simple-bookmark-bg {
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 0 0 0 100px;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+
+.simple-bookmark-bg img {
+    width: 500px;
+    position: absolute;
+    top: -70px;
+    left: -150px;
+}
+
+
+
+/* FEATURES  */
+
+.features {
+    width: 100%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.features h2 {
+    color: hsl(229, 31%, 21%);
+}
+
+.features p {
+    color: hsl(229, 8%, 60%);
+    width: 40%;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.features ul {
+    display: flex;
+    margin: 30px auto;
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    width: 40%;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.features li {
+    list-style: none;
+    margin: 40px 20px;
+}
+
+
+.features a {
+    color: hsl(229, 8%, 60%);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.features a:hover {
+    color: hsl(0, 94%, 66%)
+}
+
+
+.features a:focus {
+    color: hsl(229, 31%, 21%);
+    border-bottom: 3px solid hsl(0, 94%, 66%);
+    padding-bottom: 38px;
+
+}
+
+
+/* TAB  */
+
+.tab-details {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 150px 0 50px 0;
+}
+
+
+.tab-text {
+    width: 40%;
+    margin: 0 100px 0 0;
+    text-align: left;
+    margin-left: 100px;
+}
+
+.tab-text h3 {
+    font-size: 25px;
+    color: hsl(229, 31%, 21%);
+}
+
+.tab-text p {
+    margin: 0 0;
+    width: 100%;
+    font-size: 14px;
+    width: 70%;
+    line-height: 25px;
+}
+
+
+
+.tab-bg {
+    width: 50%;
+    position: relative;
+    background-color: hsl(231, 69%, 60%);
+    height: 300px;
+    border-radius: 0 0 100px 0;
+}
+
+.tab-bg img {
+    width: 500px;
+    position: absolute;
+    right: -40px;
+    top: -150px;
+}
+
+.more-info {
+    background-color: hsl(231, 69%, 60%);
+    color: white;
+    border-radius: 5px;
+    margin: 20px 0;
+    border: none;
+    padding: 10px 15px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#tab2Content, #tab3Content {
+    display: none;
+}
+
+
+
+
+/* DOWNLOAD EXTENSION  */
+
+.dowload-extension {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.download-header h2 {
+    color: hsl(229, 31%, 21%);
+}
+
+.download-header p {
+    color: hsl(229, 8%, 60%);
+    width: 30%;
+    margin: 0 auto;
+}
+
+.browsers {
+    display: flex;
+    margin: 100px auto;
+    width: 60%;
+    justify-content: space-between;
+}
+
+.browsers-details {
+    border-radius: 10px;
+    box-shadow: 0 0 10px hsl(231, 69%, 60%, 20%);
+    background-image: url(images/bg-dots.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 265px;
+}
+
+.browsers-details img {
+    width: 100px;
+    margin: 30px 40px;
+}
+
+.browsers-details h4 {
+    color: hsl(229, 31%, 21%);
+}
+
+.browsers-details p {
+    color: hsl(229, 8%, 60%);
+    font-size: 13px;
+}
+
+.add-install {
+    color: white;
+    background-color: hsl(231, 69%, 60%);
+    border-radius: 5px;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 40px 30px;
+}
+
+.add-install:hover {
+    background-color: white;
+    color: hsl(231, 69%, 60%);
+    border: 2px solid hsl(231, 69%, 60%);
+}
+
+.firefox-brow {
+    position: relative;
+    top: 40px;
+}
+
+
+.opera-brow {
+    position: relative;
+    top: 80px;
+}
+
+
+
+
+/* FAQ  */
+
+
+.FAQ {
+    width: 40%;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.FAQ h2 {
+    font-weight: 500;
+}
+
+.faq-header p {
+    color: hsl(229, 8%, 60%);
+    width: 80%;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.Q-A {
+    margin: 50px 0;
+}
+
+.qa-box {
+    border-top: 1px solid hsl(229, 8%, 60%, 30%);
+    padding: 30px 0;
+    position: relative;
+}
+
+.box4 {
+    border-bottom: 1px solid hsl(229, 8%, 60%, 30%);
+
+}
+
+.questions {
+    color: hsl(229, 31%, 21%);
+    text-align: left;
+    cursor: pointer;
+}
+
+.qa-box::after {
+    content: '';
+    background-image: url(images/icon-arrow.svg);
+    height: 12px;
+    width: 18px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 15px;
+    rotate: 0deg;
+    transition: rotate 0.3s ease;
+}
+
+
+
+.questions:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.answer {
+    display: none;
+}
+
+/* ANSWER OPEN */
+
+.answer.unfold {
+    color: hsl(229, 8%, 60%);
+    text-align: left;
+    display: block;
+    margin: 30px 0 20px 0;
+    line-height: 30px;
+    width: 90%;
+}
+
+.qa-box.rotate::after {
+    content: '';
+    background-image: url(images/icon-arrow.svg);
+    height: 12px;
+    width: 18px;
+    background-repeat: no-repeat;
+    display: block;
+    position: absolute;
+    rotate: 180deg;
+    top: 35px;
+    right: 15px;
+}
+
+
+/* STAY UP  */
+
+.stay-up {
+    background-color: hsl(231, 69%, 60%);
+    text-align: center;
+}
+
+.stay-up p {
+    color: white;
+    padding-top: 50px;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 5px;
+    font-size: 14px;
+}
+
+.stay-up h2 {
+    font-size: 30px;
+    color: white;
+    width: 30%;
+    margin: 30px auto;
+}
+
+.mail-box { 
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+}
+
+#mail {
+    width: 300px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+}
+
+.mail-input.open #mail {
+    border: 2px solid hsl(0, 94%, 66%);
+}
+
+.mail-input.open::after {
+    content: '';
+    z-index: 10;
+    background-image: url(images/icon-error.svg);
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 12px;
+    right: 20px;
+}
+
+#mail::placeholder {
+    color: hsl(229, 8%, 60%);
+}
+
+.contact-us {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.contact-us:hover {
+    background-color: white;
+    color: hsl(0, 94%, 66%);
+    border: 2px solid;
+}
+
+.mail-input.open {
+    position: relative;
+}
+
+.mail-input small {
+    display: none;
+}
+
+.mail-input.open small {
+    background-color: hsl(0, 94%, 66%);
+    color: white;
+    position: absolute; 
+    left: 0;
+    top: 46px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    display: block;
+}
+
+
+
+
+
+/* FOOTER  */
+
+footer {
+    background-color: hsl(229, 31%, 21%);
+}
+
+.footer-links {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    margin: 0px auto;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.logo-list-links {
+    display: flex;
+    align-items: center;
+}
+
+.list-links-footer {
+    display: flex;
+}
+
+.list-links-footer li {
+    list-style-type: none;
+    margin: 0 10px;
+}
+
+.list-links-footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+
+.list-links-footer a:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.RS ul {
+    display: flex;
+}
+
+.RS li {
+    list-style-type: none;
+    margin: 0 20px;
+}
+
+.RS i {
+    color: white;
+    font-size: 25px;
+}
+
+.RS i:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+.attribution {
+    color: white;
+    font-size: 11px;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.attribution a {
+    color: hsl(0, 94%, 66%);
+}
+
+
+
+
+
+/* MEDIA QUERIES  */
+
+
+/* HEADER  */
+
+@media screen and (max-width: 900px) {
+    
+header {
+    width: 100%;
+    padding: 20px 0;
+}
+
+
+
+#white {
+    display: block;
+    margin: 35px 0;
+    position: absolute;
+    left: 30px;
+}
+
+#dark {
+    margin-left: 30px;
+}
+
+.hamburger {
+    display: block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.cross {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    width: 20px;
+    cursor: pointer;
+}
+
+
+.nav-bar {
+    height: 100vh;
+    flex-direction: column;
+    background-color: hsl(229, 31%, 21%, 90%);
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    align-items: center;
+    transition: top 0.3s ease;
+    position: absolute;
+}
+
+.nav-bar.close {
+    top: -800px;
+}
+
+.links-header {
+    width: 100%;
+    margin: 120px 0 30px 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.nav-bar li {
+    border-top: 1px solid hsl(229, 8%, 60%);
+    padding: 20px 0;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+
+.nav-bar a {
+    color: white;
+    z-index: 100;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 3px;
+    margin: 0 auto;
+}
+
+#contact {
+    border-bottom: 1px solid hsl(229, 8%, 60%);
+    padding: 20px 0;
+    width: 80%;
+}
+
+
+#login {
+    color: white;
+    background-color: transparent;
+    width: 80%;
+    border: 2px solid white;
+    font-size: 22px;
+}
+
+#login:hover {
+    color: white;
+    background-color: transparent;
+    width: 80%;
+    border: 2px solid white;
+    font-size: 22px;
+}
+
+.RS-header {
+    display: block;
+    margin-top: 120px;
+}
+
+.RS-header ul {
+    display: flex;
+    padding-left: 20px;
+}
+
+.RS-header li {
+    list-style-type: none;
+    margin: 0 20px;
+    border: none;
+}
+
+.RS-header i {
+    color: white;
+    font-size: 30px;
+}
+
+.RS-header i:hover {
+    color: hsl(0, 94%, 66%);
+}
+
+
+
+
+
+
+
+/* SIMPLE BOOKMARK  */
+
+.simple-bookmark {
+    flex-direction: column-reverse;
+}
+
+
+.simple-bookmark-bg {
+    width: 100%;
+    height: 200px;
+}
+
+
+.simple-bookmark-bg img {
+    width: 400px;
+    top: -70px;
+    left: -30px;
+}
+
+.simple-bookmark-text {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.simple-bookmark-text h2 {
+    width: 100%;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.simple-bookmark-text p {
+    width: 90%;
+    margin: 20px auto 40px 0;
+    line-height: 30px;
+}
+
+
+
+/* FEATURES  */
+
+.features {
+    margin: 50px auto 0 auto;
+}
+
+
+.features p {
+    width: 90%;
+}
+
+.features ul {
+    width: 90%;
+    border-bottom: none;
+}
+
+.features li {
+    border-top: 1px solid hsl(229, 8%, 60%, 40%);
+    padding: 30px 0;
+    margin: 0;
+}
+
+.features span:hover {
+    color: hsl(229, 31%, 21%);
+    border-bottom: 5px solid hsl(0, 94%, 66%);
+    padding-bottom: 26px;
+    width: 50%;
+}
+
+#easy {
+    border-bottom: 1px solid hsl(229, 8%, 60%, 40%);
+    padding: 30px 0;
+}
+
+.tab-features {
+    flex-direction: column;
+}
+
+.tab-details {
+    flex-direction: column-reverse;
+    margin: 80px 0;
+}
+
+.tab-bg {
+    width: 80%;
+    height: 200px;
+}
+
+.tab-bg img {
+    width: 300px;
+    right: -20px;
+    top: -50px;
+}
+
+.tab-text {
+    width: 100%;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.tab-text p {
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+
+.more-info {
+    display: none;
+}
+
+
+/* DOWNLOAD  */
+
+.download-header p {
+    width: 90%;
+    line-height: 30px;
+}
+
+.browsers {
+    flex-direction: column;
+    margin: 50px auto;
+    width: 70%;
+}
+
+
+
+/* FAQ  */
+
+.FAQ {
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-header p {
+    line-height: 30px;
+    width: 90%;
+}
+
+.Q-A {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.questions, .answer {
+    font-size: 14px;
+}
+
+
+
+.FAQ .more-info {
+    display: block;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* STAY UP  */
+
+.stay-up h2 {
+    width: 90%;
+    font-size: 25px;
+}
+
+.mail-box {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#mail {
+    /* width: 80%; */
+    margin: 0 auto;
+}
+
+.mail-input.open {
+    /* width: 300px; */
+    margin: 0 auto;
+    position: relative;
+}
+
+.mail-input.open small {
+    /* width: 80%; */
+    width: 300px;
+    left: 0px;
+    top: 48px;
+    padding: 0 20px;
+}
+
+.contact-us {
+    /* width: 91%; */
+    width: 350px;
+    margin: 30px auto;
+    padding: 15px 20px;
+
+}
+
+.mail-input.open::after {
+    right: 20px;
+}
+
+
+/* FOOTER  */
+
+.footer-links {
+    flex-direction: column;
+}
+
+.logo-list-links {
+    flex-direction: column;
+    align-items: center;
+}
+
+.list-links-footer {
+    flex-direction: column;
+    padding-left: 0;
+    text-align: center;
+}
+
+
+.list-links-footer li {
+    margin: 20px 0;
+}
+
+
+.RS ul {
+    padding-left: 0;
+}
+
+
+}
